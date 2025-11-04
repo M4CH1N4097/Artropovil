@@ -15,7 +15,7 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Charadex",
+  title: "Artropovil",
   url: "https://charadex-team.github.io/charadex-v1.0/",
   description: `A tool for organizing small ARPGs and species.`
 }
@@ -26,28 +26,28 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "1GwgfLizD3HQCieGia6di-TfU4E3EipT9Jb0BDZQwNak",
+  id: "1YjbqDdOLMETABHY9u3e5FdKkQuP3uN6JAdrY1AhZs2c",
 
   pages: {
-    masterlist:    "masterlist",
-    masterlistLog: "masterlist log",
-    inventory:     "inventory",
-    inventoryLog:  "inventory log",
-    items:         "items",
-    traits:        "traits",
-    prompts:       "prompts",
-    faq:           "faq",
-    staff:         "mods",
+    masterlist:    "마스터리스트",
+    masterlistLog: "마스터리스트 로그",
+    inventory:     "가방",
+    inventoryLog:  "가방 로그",
+    items:         "아이템",
+    traits:        "특성",
+    prompts:       "프롬프트",
+    faq:           "FAQ",
+    staff:         "관리자",
   },
 
   options: {
 
     designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
     statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
-    rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
-    species: ['All', 'Dog', 'Cat', 'Bunny'],
+    rarity: ['All', '일반','희귀'],
+    species: ['All', '라누카'],
     itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
-    traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
+    traitTypes: ['All', '필수','추가']
 
   }
 
