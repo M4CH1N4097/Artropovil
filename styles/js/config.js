@@ -48,7 +48,7 @@ charadex.sheet = {
     species: ['전체', 'Dog', 'Cat', 'Bunny'],
     itemTypes: ['전체', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
     traitTypes: ['전체', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
-
+/*전체 분류는 모든 분류를 합산하는 것이 아니라 그 어느 카테고리에도 속하지 않는 경우를 말함*/
   }
 
 }
@@ -328,9 +328,9 @@ charadex.page.masterlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Design Type': charadex.sheet.options.designTypes,
-      'Status': charadex.sheet.options.statuses,
-      'Rarity': charadex.sheet.options.rarity,
+      '디자인 타입': charadex.sheet.options.designTypes,
+      '상태': charadex.sheet.options.statuses,
+      '등급': charadex.sheet.options.rarity,
     }
   },
 
