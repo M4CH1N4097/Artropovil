@@ -99,7 +99,7 @@ charadex.page.items = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['전체', '이름', '등급급']
+    parameters: ['전체', '이름', '등급']
   },
 
   prevNext: {
