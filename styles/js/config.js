@@ -31,7 +31,7 @@ charadex.sheet = {
   pages: {
     masterlist:    "마스터리스트",
     masterlistLog: "마스터리스트 내역",
-    inventory:     "인벤토리",
+    inventory:     "유저 인벤토리",
     inventoryLog:  "인벤토리 내역",
     items:         "아이템",
     traits:        "특성",
@@ -85,21 +85,22 @@ charadex.page.items = {
   filters: {
     toggle: true,
     parameters: {
-      'Type': charadex.sheet.options.itemTypes,
-      'Rarity': charadex.sheet.options.rarity,
+      '이름': charadex.sheet.options.items,
+      '카테고리': charadex.sheet.options.itemTypes,
+      '등급': charadex.sheet.options.rarity,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Type',
+    folderProperty: '카테고리',
     parameters: charadex.sheet.options.itemTypes,
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['전체', '이름', '등급']
+    parameters: ['전체', '카테고리', '등급']
   },
 
   prevNext: {
@@ -134,21 +135,21 @@ charadex.page.traits = {
   filters: {
     toggle: true,
     parameters: {
-      'Type': charadex.sheet.options.traitTypes,
-      'Rarity': charadex.sheet.options.rarity,
+      '특성명': charadex.sheet.options.traits,
+      '등급': charadex.sheet.options.rarity,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Type',
+    folderProperty: '카테고리',
     parameters: charadex.sheet.options.traitTypes,
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Trait', 'Rarity']
+    parameters: ['전체', '특성명', '등급']
   },
 
   prevNext: {
