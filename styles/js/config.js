@@ -292,7 +292,7 @@ charadex.page.faq = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Question', 'Answer', 'Tags']
+    parameters: ['전체', '질문', '답변', '태그']
   },
 
   prevNext: {
