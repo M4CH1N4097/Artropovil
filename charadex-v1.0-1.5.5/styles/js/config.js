@@ -30,9 +30,9 @@ charadex.sheet = {
 
   pages: {
     masterlist:    "마스터리스트",
-    masterlistLog: "마스터리스트 수정 내역",
+    masterlistLog: "마스터리스트 내역",
     inventory:     "인벤토리",
-    inventoryLog:  "인벤토리 수정 내역",
+    inventoryLog:  "인벤토리 내역",
     items:         "아이템",
     traits:        "특성",
     prompts:       "프롬프트",
@@ -44,10 +44,10 @@ charadex.sheet = {
 
     designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
     statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
-    rarity: ['All', '일반','희귀'],
-    species: ['All', '라누카'],
+    rarity: ['All', 'Common', 'Uncommon'm 'Rare', 'Very Rare', 'Legendary',
+    species: ['All', 'Lanuca'],
     itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
-    traitTypes: ['All', '필수','추가']
+    traitTypes: ['All', 'Essential', 'Add']
 
   }
 
