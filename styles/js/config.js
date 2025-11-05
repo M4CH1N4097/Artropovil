@@ -42,7 +42,7 @@ charadex.sheet = {
 
   options: {
 
-    designTypes: ['전체', '공식 디자인 개체', '게스트 디자인 개체', '미사용 디자인권', '디자인권 개체'],
+    designTypes: ['전체', 'A', '공식 디자인 개체', '게스트 디자인 개체', '미사용 디자인권', '디자인권 개체'],
     statuses: ['전체', '귀속됨', '선물 가능', '재분양 가능', '재판매 가능', '무효화', '판매중'],
     rarity: ['전체', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
     species: ['전체', 'Dog', 'Cat', 'Bunny'],
