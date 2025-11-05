@@ -16,7 +16,7 @@ let charadex = {};
 /* ==================================================================== */
 charadex.site = {
   title: "Test",
-  url: "https://m4ch1n4097.github.io/Test/",
+  url: "https://letddo.github.io/Test/", // https://letddo.github.io/Test/
   description: `A tool for organizing small ARPGs and species.`
 }
 
@@ -26,7 +26,7 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "1YjbqDdOLMETABHY9u3e5FdKkQuP3uN6JAdrY1AhZs2c",
+  id: "1brnCrf6CD4IkqvhdTX_0WVhSCpMvK1AYN0Udl3tbwls",
 
   pages: {
     masterlist:    "마스터리스트",
@@ -67,7 +67,7 @@ charadex.page.items = {
   sheetPage: charadex.sheet.pages.items,
   sitePage: 'items',
   dexSelector: 'charadex',
-  profileProperty: 'item',
+  profileProperty: '아이템',
 
   sort: {
     toggle: true,
@@ -85,21 +85,21 @@ charadex.page.items = {
   filters: {
     toggle: true,
     parameters: {
-      '카테고리': charadex.sheet.options.itemTypes,
+      '타입': charadex.sheet.options.itemTypes,
       '등급': charadex.sheet.options.rarity,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: '카테고리',
+    folderProperty: '타입',
     parameters: charadex.sheet.options.itemTypes,
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['전체', '카테고리', '등급']
+    parameters: ['전체', '타입', '등급']
   },
 
   prevNext: {
@@ -116,7 +116,7 @@ charadex.page.traits = {
   sheetPage: charadex.sheet.pages.traits,
   sitePage: 'traits',
   dexSelector: 'charadex',
-  profileProperty: 'trait',
+  profileProperty: '특성',
 
   sort: {
     toggle: true,
@@ -134,21 +134,21 @@ charadex.page.traits = {
   filters: {
     toggle: true,
     parameters: {
-      '특성명': charadex.sheet.options.traits,
+      '타입': charadex.sheet.options.traitTypes,
       '등급': charadex.sheet.options.rarity,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: '카테고리',
+    folderProperty: '타입',
     parameters: charadex.sheet.options.traitTypes,
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['전체', '특성명', '등급']
+    parameters: ['전체', '특성', '등급']
   },
 
   prevNext: {
@@ -165,7 +165,7 @@ charadex.page.prompts = {
   sheetPage: charadex.sheet.pages.prompts,
   sitePage: 'prompts',
   dexSelector: 'charadex',
-  profileProperty: 'title',
+  profileProperty: '제목',
 
   sort: {
     toggle: true,
@@ -196,7 +196,7 @@ charadex.page.prompts = {
   search: {
     toggle: true,
     filterToggle: false,
-    parameters: ['Title']
+    parameters: ['제목']
   },
 
   prevNext: {
@@ -310,7 +310,7 @@ charadex.page.masterlist = {
   sheetPage: charadex.sheet.pages.masterlist,
   sitePage: 'masterlist',
   dexSelector: 'charadex',
-  profileProperty: 'design',
+  profileProperty: '캐릭터',
 
   sort: {
     toggle: true,
@@ -343,7 +343,7 @@ charadex.page.masterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['전체', 'ID', '캐릭터', '소유자', '캐릭터', '그림', '특성']
   },
 
   prevNext: {
@@ -358,12 +358,12 @@ charadex.page.masterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'design',
+      profileProperty: '캐릭터',
       profileToggle: false,
 
       sort: {
         toggle: true,
-        key: "timestamp",
+        key: "타임스태프",
         order: "desc",
         parameters: []
       },
@@ -457,9 +457,9 @@ charadex.page.inventory = {
       sheetPage: charadex.sheet.pages.masterlist,
       sitePage: 'masterlist',
       primaryProperty: 'username',
-      relatedProperty: 'owner',
+      relatedProperty: '소유자',
       dexSelector: 'designs',
-      profileProperty: 'design',
+      profileProperty: '캐릭터',
       profileToggle: false,
 
     }

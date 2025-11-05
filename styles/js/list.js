@@ -157,7 +157,7 @@ charadex.listFeatures.filters = (parameters, selector = 'charadex') => {
         let selection = $(this).find('option:selected').toArray().map(item => item.text);
 
         // Filter the list
-        if (charadex.tools.checkArray(selection) && !selection.includes('All')) {
+        if (charadex.tools.checkArray(selection) && !selection.includes('전체')) {
           listJs.filter((list) => {
             let values = list.values()[key];
             if (charadex.tools.checkArray(values)) {
@@ -319,7 +319,7 @@ charadex.listFeatures.search = (searchParameters, searchFilterToggle = true, sel
       const selectedFilter = searchFilter.length > 0 ? searchFilter.val() : false;
       const searchString = searchElement.val();
 
-      if (selectedFilter && selectedFilter !== 'all') {
+      if (selectedFilter && selectedFilter !== '전체') {
         listJs.search(searchString, [charadex.tools.scrub(selectedFilter)]); // Search by the filter val
       } else {
         listJs.search(searchString, searchParameters); // Else search any of the parameters

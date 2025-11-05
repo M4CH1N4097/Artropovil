@@ -16,17 +16,26 @@ charadex.tools = {
   // Scrub
   // Scrubs data so its all lowercase with no spaces
   scrub(str) {
-    if (!str) return str;
-    if (!isNaN(str)) return Number(str);
-    return str.toLowerCase().replace(/[^a-z0-9]/g, "");
-  },
+    if (str == null) return '';
+    return String(str)
+      .normalize('NFKC')
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, '')
+      .replace(/[^\p{L}\p{N}]+/gu, ''); 
+},
 
   // Similar to scrub
   // Scrubs data so its all lowercase with no spaces
   createKey(str) {
-    if (!str) return str;
-    return String(str).toLowerCase().replaceAll(" ", "");
-  },
+    if (str == null) return '';
+    return String(str)
+      .normalize('NFKC')
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, '-')              
+      .replace(/[^\p{L}\p{N}_-]+/gu, '') 
+},
 
   // Create Select Options
   // Creates select options from an array
@@ -113,7 +122,7 @@ charadex.tools = {
   addMultiselect (selectElement) {
     try {
       selectElement.selectpicker({
-        noneSelectedText : `All`,
+        noneSelectedText : `전체`,
         style: '',
         styleBase: 'form-control'
       });
@@ -180,7 +189,7 @@ charadex.url = {
 
     let newObject = {};
     params.forEach((value, key) => {
-      let newValue = !value ? '' : String(value).split(',').filter(function (i) { return i !== 'all' })
+      let newValue = !value ? '' : String(value).split(',').filter(function (i) { return i !== '전체' })
       if (charadex.tools.checkArray(newValue)) {
         if (charadex.tools.checkArray(keys)) {
           if (keys.includes(key)) newObject[key] = newValue;
