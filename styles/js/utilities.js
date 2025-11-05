@@ -16,26 +16,17 @@ charadex.tools = {
   // Scrub
   // Scrubs data so its all lowercase with no spaces
   scrub(str) {
-    if (str == null) return '';
-    return String(str)
-      .normalize('NFKC')
-      .trim()
-      .toLowerCase()
-      .replace(/\s+/g, '')
-      .replace(/[^\p{L}\p{N}]+/gu, ''); 
-},
+    if (!str) return str;
+    if (!isNaN(str)) return Number(str);
+    return str.toLowerCase().replace(/[^a-z0-9]/g, "");
+  },
 
   // Similar to scrub
   // Scrubs data so its all lowercase with no spaces
   createKey(str) {
-    if (str == null) return '';
-    return String(str)
-      .normalize('NFKC')
-      .trim()
-      .toLowerCase()
-      .replace(/\s+/g, '-')              
-      .replace(/[^\p{L}\p{N}_-]+/gu, '') 
-},
+    if (!str) return str;
+    return String(str).toLowerCase().replaceAll(" ", "");
+  },
 
   // Create Select Options
   // Creates select options from an array
