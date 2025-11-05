@@ -26,7 +26,7 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "1brnCrf6CD4IkqvhdTX_0WVhSCpMvK1AYN0Udl3tbwls",
+  id: "1YjbqDdOLMETABHY9u3e5FdKkQuP3uN6JAdrY1AhZs2c",
 
   pages: {
     masterlist:    "마스터리스트",
@@ -48,7 +48,7 @@ charadex.sheet = {
     species: ['전체', 'Dog', 'Cat', 'Bunny'],
     itemTypes: ['전체', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
     traitTypes: ['전체', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
-/*전체 분류는 모든 분류를 합산하는 것이 아니라 그 어느 카테고리에도 속하지 않는 경우를 말함*/
+
   }
 
 }
